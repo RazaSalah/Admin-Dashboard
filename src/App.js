@@ -5,6 +5,7 @@ import SideBar from "./components/SideBar";
 import ReportCard from "./components/ReportCard";
 import Table from "./components/table";
 import ChartCard from "./components/ChartCard";
+import Footer from "./components/footer";
 
 export default class App extends Component {
   render() {
@@ -23,11 +24,9 @@ export default class App extends Component {
       { title: " Customers Rate" },
     ];
 
-    const Sidebar = [];
-
     //  retrieve the components
     return (
-      <div id="main-div">
+      <div>
         {/* navbar */}
         <Nav />
         <div className="d-flex" id="wrapper">
@@ -71,12 +70,7 @@ export default class App extends Component {
               </div>
             </div>
             {/* Customers Table */}
-            <div id="footer" />
-            <footer className="footer my-auto py-3 bg-light ">
-              <div className="container-fluid">
-                <span className="text-muted"> Copyright © nrt.sa 2021</span>
-              </div>
-            </footer>
+            <Footer />
           </div>
         </div>
         {/* /#page-content-wrapper */}
