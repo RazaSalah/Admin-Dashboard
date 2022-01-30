@@ -2,18 +2,18 @@ import React from "react";
 
 export default function ChartCard(props) {
   return (
-    <div>
-      <div className="col-md-6">
+    
+      <div className="col-6 mb-4">
         <div className="card">
           <div className="card-header">
-            <i>{props.icon}</i>
-            {props.title}
+            <h6>{props.title}</h6>
           </div>
           <div className="card-body">
             <div className="chart"></div>
           </div>
         </div>
       </div>
-    </div>
+      
+    
   );
 }
